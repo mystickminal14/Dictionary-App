@@ -1,0 +1,271 @@
+:root {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, #52c9c2, #20a39e);
+    background: linear-gradient(to bottom, #20a39e, #52c9c2);
+    background: rgb(41, 32, 32);
+  
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.msg{
+    position:absolute;
+    top:0;
+    left:40%;
+   display:flex;
+   align-items:center;
+   display:none;
+}
+.warning{
+    background:yellow;
+    width:300px;
+    text-align:center;
+    font-family:hammersmith one;
+    font-size:0.7rem;
+    display:flex;
+}
+#title {
+    margin-top: 80px;
+    font-size: 5rem;
+    color: rgb(180, 150, 150);
+    text-align: center;
+    font-family: 'bebas neue';
+    letter-spacing: 0.2em;
+
+}
+
+#title span {
+    color: hsl(180, 33%, 49%);
+}
+
+.dictionary {
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.dictBox {
+    
+   width:600px;
+   padding-bottom:2em;
+    background: gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+#gg{
+    color:blanchedalmond;
+}
+
+input[type='text'] {
+    margin-top:2em;
+    font-family: hammersmith one;
+    color: black;
+    outline: none;
+    width: 400px;
+    padding: 0.8em;
+    padding-bottom: 0.4em;
+    background: transparent;
+    border: none;
+    cursor:pointer;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+}
+#meaning span{
+    color:rgb(92, 7, 24);
+}
+input[type='text']::placeholder {
+    color: rgb(68, 57, 57);
+}
+
+#searchBtn {
+    margin-top:2em;
+    padding: 0.5em;
+    width: 80px;
+    background: darkgray;
+    color: black;
+    border: 3px solid black;
+    font-family: hammersmith one;
+    transition: 0.3s ease;
+}
+
+#searchBtn:hover {
+    background: darkslategray;
+    color: white;
+    border-color: white;
+    transform: translateY(-4px)
+}
+
+.word {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ gap:10em;
+}
+
+.fa-headset {
+    font-size: 2.2rem;
+    color: rgb(35, 6, 6);
+    background: rgb(212, 190, 190);
+    padding: 0.3em;
+    border: 0px solid rgb(199, 181, 181);
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px;
+}
+.word button{
+    background:transparent;
+    border: 0px solid rgb(199, 181, 181);
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px;
+}
+.adj {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.word, .adj, .sentce{
+    display:none;
+}
+.word,
+#adjective,
+#meaning,
+.sentce {
+
+    font-family: poppins;
+
+}
+
+#adjective {
+
+    color: rgb(87, 79, 79);
+}
+
+#meaning {
+    font-weight: bold;
+}
+
+.sentce {
+    margin-left: 8%;
+    border: none;
+    border-left: 3px solid black;
+
+    padding-left: 0.5em
+}
+@media (max-width:620px){
+    
+.dictBox{
+    width:450px;
+    padding:1em;
+}
+input[type='text']{
+    width:300px;
+}
+.adj{
+    font-size:1.4rem;
+}
+.sentce{
+    font-size:1.3rem;
+}
+
+}
+@media (max-width:463px){
+    .dictBox{
+        width:380px
+    }
+    .adj{
+        font-size:1.2rem;
+    }
+    .sentce{
+        font-size:1.2rem;
+    }
+    #title{
+        margin-top:40px;
+        font-size:4rem;
+    }
+    .dictionary{
+        margin-top:40px;
+    }
+    .word{
+        gap:6em;
+    }
+    .msg{
+        left:10%;
+    }
+    
+  
+}
+@media (max-width:389px){
+    .dictBox{
+        width:380px
+    }
+    .adj{
+        font-size:1.2rem;
+    }
+    .sentce{
+        font-size:1.2rem;
+    }
+    #title{
+        margin-top:10px;
+        font-size:5rem;
+    }
+    .dictionary{
+        margin-top:40px;
+    }
+    
+}
+@media (max-width:384px){
+    .dictBox{
+        width:300px
+    }
+    .adj{
+        font-size:1.2rem;
+    }
+    .msg{
+        left:0%;
+        width:250px; 
+    }
+    
+    .sentce{
+     font-size:1.1rem;
+    }
+    .word{
+        gap:4em;
+        font-size:1.3rem;
+    }
+    #title{
+        margin-top:10px;
+        font-size:5rem;
+    }
+    .dictionary{
+        margin-top:40px;
+    }
+    
+}

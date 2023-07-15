@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minal's Lexiconia</title>
+    <link rel="stylesheet" href="dictionary.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo&family=Amatic+SC&family=Bangers&family=Bebas+Neue&family=Boogaloo&family=Dancing+Script:wght@500&family=Foldit:wght@600&family=Hammersmith+One&family=Kalam&family=Kaushan+Script&family=League+Gothic&family=Lobster+Two&family=Oswald&family=Patrick+Hand&family=Poppins:wght@200&family=Roboto+Condensed&family=Roboto:wght@500&family=Rouge+Script&family=Style+Script&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/402d710096.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <audio id="sound"></audio>
+    <div class="msg">
+        <div class="warning">
+
+        </div>
+    </div>
+
+    <h1 id="title">Minal's <span>Lexiconia</span></h1>
+    <div class="dictionary">
+        <div class="dictBox">
+            <div class="box">
+                <input type="text" id="search" placeholder="type a word">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="word">
+                <h1 id='letter'>kai</h1>
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <div id='adj' class="adj">
+
+                <h5 id="adjective">adjective</h5>
+                <p id="meaning">this is a word said my kai kai</p>
+            </div>
+
+
+            <div class="sentce">
+
+                <p id="sentence">${value[0].meanings[0].definitions[0].example}</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="dictionary.js"></script>
+</body>
+
+</html>
